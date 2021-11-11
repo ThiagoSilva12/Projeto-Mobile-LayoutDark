@@ -12,7 +12,7 @@ export default function App() {
 <View style={estilo.header}>
 
   <View style={estilo.perfil}>
-<Image source ={{uri:"https://lh3.googleusercontent.com/proxy/_o4mD_kOlH6PgrX9trvtsx6BA8hbKmvbyI-p7T2BzhKGHtktku2f-4V8b0RouUDrj1f2W8JjybdGwP_BtmI_AW--Z0jpdnbY07biya_1PVBoV4EpWZ_C27KOF6Ao2UOr"}} style={estilo.imgperfil}/>
+<Image source ={{uri:"https://upload.wikimedia.org/wikipedia/commons/a/af/Tio_Douglas_Perfil.png"}} style={estilo.imgperfil}/>
   </View>
 
 
@@ -27,6 +27,8 @@ export default function App() {
 
 </View>
      {/* Fim do header */}
+
+<ScrollView horizontal={false}>
 
 {/* Início dos Stories */}
 <View style={estilo.stories}>
@@ -74,7 +76,7 @@ export default function App() {
 
   <View>
   <Text style={estilo.blackbox}>Live</Text>
-    <Image source={{uri:"https://images.unsplash.com/photo-1591468069148-5cc79ed1caaa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFpc2FnZW18ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}} style={estilo.imgstories}/>
+    <Image source={{uri:"https://media.istockphoto.com/photos/early-morning-country-road-in-french-picardie-near-boulogne-and-picture-id1266782505?k=20&m=1266782505&s=612x612&w=0&h=5DeR0adMGXj0fbkdAtVeJ2FrHgNS-l8tm4bburmfe0k="}} style={estilo.imgstories}/>
     <View style={estilo.txticon}>
     <Text style={estilo.txt}>Black Hat Man</Text>
     <Image source={require("./assets/iconverifired.png")} style={estilo.icon}/>
@@ -87,6 +89,48 @@ export default function App() {
 </View>
 {/* Fim dos Stories */}
 
+{/* Início do Trending */}
+<View style={estilo.trending}>
+
+<View style={estilo.cxtitulo}>
+    <Text style={estilo.trendingtitulo}>
+      Trending
+    </Text>
+    <Image source={require("./assets/more.png")}style={estilo.trendingmore}/>
+  </View>
+
+<View style={estilo.cxtrendingdetalhe}>
+  <View>
+  <Image source={{uri:"https://skydiveseven-ojyavpbz3irxqcupp4.netdna-ssl.com/wp-content/uploads/2018/10/prendas-natal-2018-salto-paraquedas-2.jpg"}} style={estilo.detalheimg}/>
+  <Text style={estilo.detalhelike}>
+    Like
+  </Text>
+
+  <View style={estilo.trendingusuario}>
+    <Image source={{uri:"https://img.a.transfermarkt.technology/portrait/big/291963-1526044700.jpg?lm=1"}} style={estilo.trendingusuarioimg}/>
+    <View>
+      <Text style={estilo.trendingusuariotitulo}>Fernando Miguel</Text>
+      <Text style={estilo.trendingusuariosub}>2 minutos atrás</Text>
+    </View>
+  </View>
+
+<Text style={estilo.trendingobs}>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sapiente quas itaque nemo labore neque pariatur amet consequatur at aut! Explicabo perferendis rem est minus odit architecto animi, libero necessitatibus.
+
+</Text>
+
+  </View>
+
+</View>
+
+
+</View>
+{/* fim do Trending */}
+
+
+{/* Todos os elementos devem ficar acima do ScrollView */}
+</ScrollView>
     </View>
   );
 }
